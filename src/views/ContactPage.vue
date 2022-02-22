@@ -22,14 +22,13 @@ export default  {
 </script>
 
 <style scoped>
-
 div .left-container {
-    position: absolute;
+    position: inherit;
     left: 0%;
     top: 85px;
     display: flex;
     flex-direction: column;
-    border: solid white 1px;
+    border: solid rgb(0, 0, 0) 1px;
     width: 50vw;
     height: 100vh;
 }
@@ -51,12 +50,15 @@ div .left-container {
 }
 
 .left-minor-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 25vw;
     height: 25vh;
     margin-top: 10%;
     margin-left: 25%;
-    border: solid white 1px;
+    border: solid rgb(0, 0, 0) 1px;
 }
 
 div .right-container {
@@ -64,8 +66,6 @@ div .right-container {
     left: 50%;
     top: 85px;
     display: flex;
-    border: solid white 1px;
-    width: 50vw;
-    height: 100vh;
+    border: solid rgb(6, 6, 6) 1px;
 }
 </style>

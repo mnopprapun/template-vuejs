@@ -1,66 +1,70 @@
 <template>
-<div class='nav-bar'>
-    <a class='logo'><img src='src/assets/tinywhalelogo.png' alt='Template Logo' height='80px'></a>
-    <h1 class='company-name' alt='company-name'>Template Replace</h1>
-    <ul class='nav'>
-        <router-link class='nav-link' :to="{ name: 'HomePage' }">Home</router-link>
-        <router-link class='nav-link' to='Contact'>Contact</router-link>
-        <router-link class='nav-link' to='About'>About</router-link>
-        <!-- <li class='links'><a href='null'>Home</a></li>
-        <li class='links'><a href='null'>Whales</a></li>
-        <li class='links'><a href='null'>Pictures</a></li>
-        <li class='links'><a href='null'>Profiles</a></li>
-        <li class='links'><a href='null'>Contact</a></li> -->
-    </ul>
-    <div class='search-bar'>
-        <input class='input-bar' type='text' placeholder='Search Here'><button><img alt='search-icon' src='null'> Search</button>
+<div class="nav">
+    <!-- <div class="banner">
+        <img src="#" alt="banner" />
+    </div> -->
+    <div class="nav-bar">
+        <h1 class="logo"> Company Title</h1>
+        <ul class="nav-links">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/contact">Contact</a>
+            </li>
+            <li>
+                <a href="#">Link 4</a>
+            </li>
+        </ul>
+        <div class="searchbar">
+            <input placeholder="Search Here">
+            <button class="search-btn">Search</button>
+        </div>
+        <button class="signin-up">Login/Signup</button>
     </div>
-    <router-link class='signup' to='Signup'>Sign-Up / Login</router-link>
 </div>
 </template>
 
 <script>
+
 export default {
     name: 'Nav-Bar',
-    props: {
-
-    }
 }
 </script>
 
 <style scoped>
-.nav-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0% 10px;
-    background: #bfbfbf;
+.nav-bar{
     display: flex;
+	justify-content: flex-end;
     align-items: center;
-    justify-content: space-between;
+	border-bottom:1px solid;
+	padding: 15px;
+	background: #555;
 }
 
-ul  .nav-link{
-    list-style: none;
-    display: inline;
-    padding: 10px;
-    margin: 15px;
-    justify-content: space-around;
+.logo{
+	margin-right: auto;
+	cursor:pointer;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.nav-links {
+	list-style: none;
+	font-size: 18px;
 }
 
-a:hover {
-    border-bottom: solid 1px;
+.nav-links li {
+	display: inline-block;
+	padding: 0 15px;
 }
 
-div .search-bar {
-    float: right;
-    padding: 10px;
-    border: 3px solid #000000;
+.nav-links li a {
+	color: #ffffff;
+}
+
+.nav-links li a:hover{
+	color: #ffff;
 }
 </style>

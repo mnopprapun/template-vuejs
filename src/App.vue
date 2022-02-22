@@ -1,22 +1,24 @@
 <template>
 <section>
-    <div class="circle"></div>
     <header>
         <NavBar />
     </header>
-    <router-view />
+    <body>
+        <router-view />
+    </body>
+<Footer />
 </section>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
-// import Button from './components/ButtonLinks.vue'
+import Footer from './components/Footer.vue'
 
 export default {
     name: 'App',
     components: {
         NavBar,
-        // Button
+        Footer,
     }
 }
 </script>
@@ -27,20 +29,10 @@ export default {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    color: rgb(0, 0, 0);
 }
 
 section {
-    display: flex;
-    position: relative;
-    width: 100vw;
-    min-height: 100vh;
-    padding: 100px;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url("/Users/mathawudnopprapun/Development/vue/template/src/assets/pexels-tyler-lastovich-997443.jpg");
-    background-size: 100% 100%;
-    background-repeat: repeat;
+     background: rgb(60, 60, 60);
 }
-
 </style>
